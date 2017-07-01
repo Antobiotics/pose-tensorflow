@@ -1,20 +1,17 @@
 #!/usr/bin/env python
-import os
 import sys
-
-sys.path.append(os.path.dirname(__file__) + "/../")
+import argparse
 
 from scipy.misc import imread
 
-from config import load_config
-from nnet import predict
-from util import visualize
-from dataset.pose_dataset import data_to_input
+from pose.config import load_config
+from pose.nnet import predict
+from pose.util import visualize
+from pose.dataset.pose_dataset import data_to_input
 import matplotlib.pyplot as plt
 from util.timer import Timer
 import cv2
 import yarp
-import argparse
 import numpy as np
 
 
@@ -159,7 +156,7 @@ class skeleton2DModule(yarp.RFModule):
     """
     Description:
         Object to read yarp image and recognize the skeleton
-        
+
     Args:
         input_port  : input port of image
         output_port : output port for streaming parts

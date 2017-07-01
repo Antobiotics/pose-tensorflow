@@ -1,4 +1,4 @@
-from dataset.pose_dataset import PoseDataset
+from pose.dataset.pose_dataset import PoseDataset
 
 
 class MPII(PoseDataset):

@@ -1,7 +1,7 @@
 from functools import reduce
 import numpy as np
 
-from dataset.pose_dataset import PoseDataset, Batch
+from pose.dataset.pose_dataset import PoseDataset
 
 
 def merge_batch(batches):

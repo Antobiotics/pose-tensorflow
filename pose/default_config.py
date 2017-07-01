@@ -1,7 +1,5 @@
 from easydict import EasyDict as edict
-
 cfg = edict()
-
 cfg.stride = 8.0
 cfg.weigh_part_predictions = False
 cfg.weigh_negatives = False
